@@ -50,7 +50,9 @@ traiteFichierDMF("txt/lextech-201009A.txt","lextech","DMF : Liste des techniques
 traiteFichierDMF("txt/lextech-201009B.txt","lexmateriaux","DMF : Liste des matériaux",5,$limitation_fichier);
 //traiteFichierDMF("lexautr-201009.txt","lexautr","DMF : Liste des auteurs",8,$limitation_fichier);
 traiteFichierDMF("txt/lexautrole-201009.txt","lexautrole","DMF : Liste des rôles des auteurs/exécutants",5,$limitation_fichier);
-traiteFichierDMF("txt/lexdecv-201009.txt","lexdecv","DMF : Liste des méthodes de collecte, types de sites et lieux géographiques de découverte",5,$limitation_fichier);
+// remarque pour lexdecv : séparation méthode de collecte dans lexdecv / types de site et lieux dans lexsite
+traiteFichierDMF("txt/lexdecv-201009A.txt","lexdecv","DMF : Liste des méthodes de collecte",5,$limitation_fichier);
+traiteFichierDMF("txt/lexdecv-201009B.txt","lexsite","DMF : Liste des méthodes de types de sites et lieux géographiques de découverte",5,$limitation_fichier);
 traiteFichierDMF("txt/lexdeno-201009.txt","lexdeno","DMF : Liste des dénominations",4,$limitation_fichier);
 traiteFichierDMF("txt/lexdomn-20100921.txt","lexdomn","DMF : Liste des domaines",16,$limitation_fichier);
 traiteFichierDMF("txt/lexecol-201009.txt","lexecol","DMF : Liste des écoles",5,$limitation_fichier);
