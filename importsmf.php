@@ -44,7 +44,10 @@ $vn_place_other= $t_list->getItemIDFromList('places_types', 'other');
 /****************************************************************
  * Appels pour le traitement
  ****************************************************************/
-traiteFichierDMF("txt/lextech-201009.txt","lextech","DMF : Liste des techniques et matériaux",5,$limitation_fichier);
+ 
+//remarque pour lextech : séparation techniques dans dmf_lextech / matériaux dmf_lexmateriaux
+traiteFichierDMF("txt/lextech-201009A.txt","lextech","DMF : Liste des techniques",5,$limitation_fichier);
+traiteFichierDMF("txt/lextech-201009B.txt","lexmateriaux","DMF : Liste des matériaux",5,$limitation_fichier);
 //traiteFichierDMF("lexautr-201009.txt","lexautr","DMF : Liste des auteurs",8,$limitation_fichier);
 traiteFichierDMF("txt/lexautrole-201009.txt","lexautrole","DMF : Liste des rôles des auteurs/exécutants",5,$limitation_fichier);
 traiteFichierDMF("txt/lexdecv-201009.txt","lexdecv","DMF : Liste des méthodes de collecte, types de sites et lieux géographiques de découverte",5,$limitation_fichier);
@@ -58,6 +61,7 @@ traiteFichierDMF("txt/lexperi-20100921.txt","lexperi","DMF : Liste des datations
 traiteFichierDMF("txt/lexsrep-201009.txt","lexsrep","DMF : Liste des sources de la représentation",5,$limitation_fichier);
 traiteFichierDMF("txt/lexstat-201009.txt","lexstat","DMF : Liste des termes autorisés du statut juridique de l'objet",4,$limitation_fichier);
 traiteFichierDMF("txt/lexutil-201009.txt","lexutil","DMF : Liste des utilisations - destinations",5,$limitation_fichier);
+traiteFichierDMF("txt/lexrepr-201203.txt","lexrepr","DMF : Liste des sujets représentés",5,$limitation_fichier);
 traiteFichierLieuDMF("txt/lexlieux-201009.txt","lexlieux",5,$limitation_fichier);
 echo "\nC'est fini, il est temps d'aller se coucher maintenant !...\n\n";
 
